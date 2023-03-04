@@ -15,7 +15,7 @@ function Hero() {
               excepturi ipsa voluptate dicta!
             </p>
             <a href="/" className="btn me-2 btn-warning">
-              Get Started
+              Get Started 
             </a>
             <a href="/" className="btn me-2 btn-success">
               My Portfolio

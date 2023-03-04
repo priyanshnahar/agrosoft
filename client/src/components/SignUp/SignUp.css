@@ -1,0 +1,9 @@
+.container {
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  button[type="submit"] {
+    margin-top: 10px;
+  }
+  

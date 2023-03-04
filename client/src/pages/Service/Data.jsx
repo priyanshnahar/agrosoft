@@ -1,4 +1,4 @@
-const serviceData = [
+export const Data = [
     {
       id: 1,
       icon: "bx bxs-check-shield",
@@ -37,5 +37,4 @@ const serviceData = [
     },
   ];
   
-  export default serviceData;
   

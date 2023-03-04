@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Footer.css";
+import "./Footer.css";
 
 function Footer() {
   return (
@@ -60,14 +60,7 @@ function Footer() {
           <div className="row">
             <div className="col-md-6">
               <p className="mb-0">
-                © 2020 copyright all right reserved | Designed with{" "}
-                <i className="bx bx-heart text-danger"></i> by
-                <a
-                  href="https://www.youtube.com/channel/UCYMEEnLzGGGIpQQ3Nu_sBsQ"
-                  className="text-white"
-                >
-                  SA7MAN
-                </a>
+                © 2020 copyright all right reserved | Designed By Priyansh
               </p>
             </div>
             <div className="col-md-6">

@@ -1,7 +1,8 @@
 import React from "react";
-import serviceData from "./serviceData";
+import "./Service.css";
+import { Data } from "./Data";
 
-function Service() {
+export const Service = () => {
   return (
     <section id="services">
       <div className="container">
@@ -17,7 +18,7 @@ function Service() {
           </div>
         </div>
         <div className="row g-4">
-          {serviceData.map((service) => (
+          {Data.map((service) => (
             <div className="col-lg-4 col-sm-6" key={service.id}>
               <div className="service card-effect bounceInUp">
                 <div className="iconbox">
@@ -32,6 +33,4 @@ function Service() {
       </div>
     </section>
   );
-}
-
-export default Service;
+};
