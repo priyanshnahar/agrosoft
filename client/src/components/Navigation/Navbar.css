@@ -1,0 +1,16 @@
+.navbar-nav .dropdown-toggle::after {
+    display: none !important;
+  }
+
+  .navbar {
+    background-color: transparent !important;
+    box-shadow: none !important;
+  }
+  
+  .navbar-nav .nav-link {
+    color: black !important;
+  }
+
+.navbar-brand {
+    color: black !important;
+  }
