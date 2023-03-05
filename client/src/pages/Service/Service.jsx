@@ -2,9 +2,9 @@ import React from "react";
 import "./Service.css";
 import { Data } from "./Data";
 
-export const Service = () => {
+function Service() {
   return (
-    <section id="services">
+    <section id="service">
       <div className="container">
         <div className="row mb-5">
           <div className="col-md-8 mx-auto text-center">
@@ -33,4 +33,6 @@ export const Service = () => {
       </div>
     </section>
   );
-};
+}
+
+export default Service;

@@ -25,7 +25,7 @@ export function OurProjects() {
         <div className="row g-3">
           <div className="col-lg-4 col-sm-6">
             <div className="project">
-              <img src= {pro1} alt="" />
+              <img src={pro1} alt="" />
               <div className="overlay">
                 <div>
                   <h4 className="text-white">Project Title</h4>
