@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUser } from '@fortawesome/free-solid-svg-icons'
 import "./Navbar.css";
 
 function MyNavbar() {
@@ -12,7 +14,7 @@ function MyNavbar() {
   return (
     <Navbar bg="white" expand="lg" expanded={expanded} sticky="top">
       <div className="container" >
-        <Navbar.Brand href="#">
+        <Navbar.Brand to="/">
           <h4>PA CONSULTANTS</h4>
         </Navbar.Brand>
         <Navbar.Toggle
@@ -21,20 +23,21 @@ function MyNavbar() {
         />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mx-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#services">Services</Nav.Link>
-            <NavDropdown title="Subsidy Scheme" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#">Client</NavDropdown.Item>
-              <NavDropdown.Item href="#contact">Contact Us</NavDropdown.Item>
+            <Nav.Link  href ="/">Home</Nav.Link>
+            <Nav.Link  href ="/service">Service</Nav.Link>
+            <NavDropdown  href="/" title="Subsidy Scheme" id="nav-dropdown">
+              <NavDropdown href="/">Client</NavDropdown>
+              <NavDropdown.Item href="/contact">Contact Us</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="About Us" id="basic-nav-dropdown">
               <NavDropdown.Item href="#">Client</NavDropdown.Item>
-              <NavDropdown.Item href="#contact">Contact Us</NavDropdown.Item>
+              <NavDropdown.Item href="/contact">Contact Us</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#blog">Blog</Nav.Link>
-            <Nav.Link href= "#contact">SchemeGuidlines</Nav.Link>
+           <Nav.Link href= "#contact">SchemeGuidlines</Nav.Link>
           </Nav>
-          <button className="btn btn-primary ms-lg-3">Join Us</button>
+          <button >
+      <FontAwesomeIcon icon={faUser} border={false} />
+    </button>
         </Navbar.Collapse>
       </div>
     </Navbar>
